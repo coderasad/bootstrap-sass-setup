@@ -1,0 +1,76 @@
+html {
+  scroll-behavior : smooth;
+}
+
+:focus-visible {
+  outline : none !important;
+}
+
+a {
+  text-decoration : none !important;
+}
+
+p,
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+  margin-bottom : 0;
+}
+
+.form-check-input:focus {
+  box-shadow : none;
+}
+
+.form-control:focus {
+  box-shadow : none !important;
+}
+
+textarea {
+  resize : vertical;
+
+}
+
+.btn-check:focus + .btn-outline-primary, .btn-outline-primary:focus,
+.btn-check:focus + .btn-primary, .btn-primary:focus {
+  box-shadow : none !important;
+}
+
+.btn-check:focus + .btn, .btn:focus {
+  outline    : 0;
+  box-shadow : none;
+}
+
+.navbar-toggler:focus {
+  box-shadow : none;
+}
+
+.z-index-1 {
+  z-index : 1;
+}
+
+.z-index--1 {
+  z-index : -1;
+}
+
+.img-fit {
+  object-fit : cover;
+  object-position: top;
+}
+
+.fs-12 {
+  font-size : 12px;
+}
+
+.w-8 {
+  width : 8px;
+}
+
+.h-8 {
+  height : 8px;
+}
+
+.w-32 {
+  width : 32px;
+}
+
+.h-32 {
+  height : 32px;
+}

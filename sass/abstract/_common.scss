@@ -1,0 +1,13 @@
+.cs-btn{
+  height: 48px;
+  min-width: 155px;
+  max-width: 255px;
+  background: $primary;
+  color: #fff !important;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  @include media-breakpoint-down(lg){
+    max-width : 155px;
+  }
+}

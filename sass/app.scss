@@ -1,0 +1,27 @@
+
+// abstracts
+@import 'abstract/variables';
+//IMPORT BOOTSTRAP 5
+@import "scss-bs/bootstrap";
+@import 'abstract/mixins';
+@import 'abstract/common';
+
+
+// Base
+@import 'reset/base';
+@import 'reset/typography';
+
+// components
+
+
+// Layout
+@import "layouts/header";
+@import "layouts/footer";
+
+// pages
+@import "pages/home";
+
+
+
+//SCSS BUILD COMMAND
+//sass sass/app.scss assets/css/index.css --watch

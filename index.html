@@ -1,0 +1,139 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Digipad | HOME</title>
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+
+<header  id="navbar">
+    <!--HEADER SECTION-->
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-light p-0">
+                    <div class="container-fluid">
+                        <a class="navbar-brand p-0" href="#">
+                            <img src="assets/images/logo-black.png" alt="">
+                        </a>
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="navbar-collapse d-none d-lg-block" id="navbarSupportedContent">
+                            <!--MENU ITEMS-->
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link p-0 text-dark active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link p-0 text-dark" href="#">Launchpad</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link p-0 text-dark" href="#">Swap</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link p-0 text-dark" href="#">Lock</a>
+                                </li>
+                            </ul>
+                            <a href="" class="cs-btn">Connect</a>
+
+                            <!--LANG-SECTION-->
+                            <div class="dropdown lang-section">
+                                <a class="dropdown-toggle " href="#" id="navbarDropdown" role="button"
+                                   data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="assets/images/flag.png" class="me-2" alt="">En
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item " href="#">
+                                        <img src="assets/images/flag.png" class="me-2" alt="">En
+                                    </a></li>
+                                    <li><a class="dropdown-item " href="#">
+                                        <img src="assets/images/flag.png" class="me-2" alt="">Bn
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                <!--MOBILE MENU-->
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand p-0" href="#">
+                            <img src="assets/images/logo-black.png" alt="">
+                        </a>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link p-0 text-dark active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-0 text-dark" href="#">Launchpad</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-0 text-dark" href="#">Swap</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-0 text-dark" href="#">Lock</a>
+                            </li>
+                        </ul>
+                        <a href="" class="cs-btn">Connect</a>
+
+                        <!--LANG-SECTION-->
+                        <div class="dropdown lang-section">
+                            <a class="dropdown-toggle " href="#" id="navbarDropdown2" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="assets/images/flag.png" class="me-2" alt="">En
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                <li><a class="dropdown-item " href="#">
+                                    <img src="assets/images/flag.png" class="me-2" alt="">En
+                                </a></li>
+                                <li><a class="dropdown-item " href="#">
+                                    <img src="assets/images/flag.png" class="me-2" alt="">Bn
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        let tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        let tooltipList        = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+
+        //STICKY-MENU
+        let prevScrollpos = window.pageYOffset;
+        window.onscroll   = function () {
+            let currentScrollpos = window.pageYOffset;
+            if (prevScrollpos > currentScrollpos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-100px";
+            }
+
+            prevScrollpos = currentScrollpos;
+
+        }
+
+    });
+
+</script>
+
+</body>
+</html>

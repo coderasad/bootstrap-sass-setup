@@ -1,0 +1,60 @@
+header {
+  box-shadow : 0 1px 2px rgba(0, 0, 0, 0.12);
+
+  .navbar-collapse {
+    margin : 16px 0;
+  }
+
+  .navbar-nav {
+    .nav-link {
+      margin-right  : 56px;
+      border-bottom : 1px solid transparent;
+      font-weight   : 500;
+      transition    : all .5s;
+
+      &.active, &:hover {
+        color        : $primary !important;
+        border-color : $primary;
+
+      }
+
+      @include media-breakpoint-down(lg) {
+        display       : inline-block;
+        margin-bottom : 15px;
+      }
+    }
+  }
+
+  .lang-section {
+    margin : 0 84px 0 76px;
+    @include media-breakpoint-down(lg) {
+      margin : 30px 0 0;
+    }
+
+    .dropdown-toggle {
+      border        : 1px solid #F1F2F3;
+      border-radius : 4px;
+      padding       : 8px 12px;
+      color         : #000;
+    }
+
+    .dropdown-menu[data-bs-popper] {
+      left      : auto;
+      right     : 0;
+      min-width : 84px;
+    }
+  }
+
+  .offcanvas {
+    z-index : 9999;
+  }
+
+  #navbar{
+    position : fixed;
+    left : 0;
+    top: 0;
+    width : 100%;
+    transition: all .5s;
+  }
+}
+
